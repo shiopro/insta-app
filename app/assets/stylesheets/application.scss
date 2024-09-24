@@ -2,6 +2,7 @@
 @import 'form';
 @import 'buttons';
 @import 'flash';
+@import 'profile';
 
 html {
   word-spacing: 1px;
@@ -45,6 +46,12 @@ a {
 h2 {
   margin-top: 8px;
   text-align: center;
+}
+
+h3 {
+  margin-top: 46px;
+  text-align: center;
+  color: rgba(51, 58, 66, 1);
 }
 
 .action {
