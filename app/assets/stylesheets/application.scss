@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'form';
+@import 'buttons';
+@import 'flash';
+
+html {
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-size: 1em;
+  color: $text-base-color;
+  font-family: "Gill Sans";
+}
+
+.container {
+  width: 100%;
+  padding: 0 25px;
+}
+
+.back-image {
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $text-base-color;
+}
+
+h2 {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.action {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
