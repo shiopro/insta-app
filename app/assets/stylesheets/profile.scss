@@ -1,21 +1,28 @@
+.profile-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
 .profile {
   &_icon {
-  margin-top: 70px;
-  margin-left: 136px;
-  margin-right: 140px;
+    margin: 50px 0 30px;
+    cursor: pointer;
+
+    :hover {
+      opacity: 0.7;
+    }
 
     img {
       width: 90px;
       height: 90px;
       border-radius: 100%;
-    
     }
   }
 
   &_detail {
     display: flex;
     justify-content: space-between;
-    margin: 30px 40px 10px;
+    margin: 10px 40px 10px;
 
     span {
       display: block;
@@ -27,5 +34,12 @@
       margin-top: 8px;
     }
   }
+}
 
+#avatar_field {
+  display: none; //ファイル選択ボタンは隠す
+}
+
+.submit_btn {
+  display: none; //ボタンは初期は隠す
 }
