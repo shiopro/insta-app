@@ -1,0 +1,33 @@
+.container 
+  %h3
+    = @user.username
+  = form_for @user do |f|
+    .profile-icon-container
+      .profile_icon
+        - if @user.avatar.attached?
+          = image_tag @user.avatar, id: 'profile-image', class: 'profile-icon'
+        - else
+          = image_tag 'default-avatar.png', id: 'profile-image', class: 'profile-icon'
+
+      = f.file_field :avatar, direct_upload: true, id: 'avatar_field'
+
+      = f.submit '保存', class: 'submit_btn'
+  .profile_content
+    .profile_detail
+      %div
+        %span 44
+        %p Posts
+      %div
+        %span 110
+        %p Followers
+      %div
+        %span 44
+        %p Follow
+
+  .gallery
+    = image_tag 'Rectangle(6).png', class: 'gallery_1', id: 'post-icon'
+    = image_tag 'Rectangle (2).png', class: 'gallery_2', id: 'post-icon'
+    = image_tag 'Rectangle (1).png', class: 'gallery_3', id: 'post-icon'
+    = image_tag 'Rectangle (3).png', class: 'gallery_4', id: 'post-icon'
+    = image_tag 'Rectangle (5).png', class: 'gallery_5', id: 'post-icon'
+    = image_tag 'Rectangle (4).png', class: 'gallery_6', id: 'post-icon'

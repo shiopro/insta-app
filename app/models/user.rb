@@ -24,4 +24,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :username, presence: true, uniqueness: true
+
+  has_one_attached :avatar
 end

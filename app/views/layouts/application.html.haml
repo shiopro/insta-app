@@ -9,6 +9,14 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
   %body
+    %header
+      .header_logos 
+        - if !current_page?(root_path)
+          = link_to :back do
+            = image_tag 'Group.png', class: 'header_back'
+      .header_pageTitle 
+        = link_to 'InstaApp', root_path 
+
     - if flash.present?
       .flash 
         - flash.each do |key, value|
